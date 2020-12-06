@@ -1,0 +1,248 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{outlines}
+\usepackage{amsmath}
+\title{Ch. 11, 12 Notes}
+\author{John Yang}
+\setcounter{section}{+10}
+
+\begin{document}
+\maketitle
+\section{Solids and Fluids}
+\subsection{States of Matter}
+\begin{outline}
+    \1 Solid - semirigid collection of atoms or molecules that maintains a definite shape and volume
+    \1 liquid - collection of atoms or molecules that has a density similar to solids, maintains definite volume but takes the shape of its container. 
+    \1 gas - loose collection of atoms or molecules that exhibits flow characteristics but fills its container. More easily compressed and expanded than liquids or solids
+    \1 plasma - when electrons are liberated from their parent atoms
+    \1 there are other more exotic states of matter that exist (such as bose-einstein condensate)
+    \1 fluids - materials that flow
+\end{outline}
+\subsection{Stress, Strain and Young's Modulus for Solids}
+\begin{outline}
+    \1 Tensile forces - forces that stretch
+        \2 Elongation of a wire or rope is proportional to force applied; that is \[F=k\Delta \ell\]
+    \1 If applied force is too large, the rope permanently deforms and is said to be \textbf{inelastic}. Even greater forces cause the rope to break
+\0 \[\Delta \ell = \dfrac{1}{E} \dfrac{F\ell}{A}\] \[k=\dfrac{EA}{\ell}\]
+    \1 where $E$ is the Young's Modulus of the material; constant. $A$ is the cross sectional area of the rope.
+    \1 tensile stress $\equiv \dfrac{F}{A}$
+    \1 tensile strain $\equiv\dfrac{\Delta \ell}{\ell}$
+    \1 therefore, \[E\equiv\dfrac{\text{tensile stress}}{\text{tensile strain}}=\dfrac{F/A}{\Delta \ell/\ell}\]
+    \1 shear stress, forces applied opposite and parallel over a separation $\ell$
+    \1 shear stress $= F/A$
+    \1 shear strain $=\Delta \ell/\ell$, where $\Delta \ell$ is the deformation
+    \1 shear modulus $G$ is shear stress over shear strain;
+    \[G=\dfrac{F/A}{\Delta \ell/\ell}\]
+    \1 change in volume is $\Delta V = V_f-V_i$
+    \1 Bulk modulus $B$ is \[B\equiv-\dfrac{\text{pressure}}{\text{volume strain}}\], where volume strain is $\Delta V/V_i$
+    \1 Compressibility $\beta$ is \[\beta\equiv\dfrac{1}{B}\]
+\end{outline}
+\subsection{Fluid Pressure}
+\begin{outline}
+    \1 \[P=\dfrac{dF}{dA}\]
+    \1 Pressure is a scalar; magnitude of force per unit area acting on any differential area regardless of orientation within the fluid
+    \1 Units: $1\text{ N}/\text{m}^2\equiv1\text{ Pa}$
+        \2 $1\text{ atm}\equiv101.325\text{ kPa}$
+    \1 gauge pressure $\equiv P-1\text{ atm}$
+\end{outline}
+\subsection{Static Fluids}
+\begin{outline}
+\0 \[\dfrac{dP}{dy}=-\rho g\]
+    \1 For incompressible fluids, \[P(y)=P_0-\rho gy\]
+    \1 Pressure is the same  at all points at same depth or elevation regardless of horizontal location
+    \1 For compressible fluids, density is a function of height.
+\0 \[P(y)=P_0e^{-\dfrac{\rho_0}{P_0}gy}\]
+    \1 Scale height $\equiv\dfrac{P_0}{\rho_0g}$
+\end{outline}
+\subsection{Pascal's principle}
+\begin{outline}
+    \1 If pressure is increased on the surface of an enclosed liquid, pressure increases by the same amount at all points throughout the liquid and on the walls of the container, regardless of shape. 
+\0 \[\dfrac{F_1}{A_1}=\dfrac{F_2}{A_2}\]
+\end{outline}
+\subsection{Archimedes' Principle}
+\begin{outline}
+    \1 a system submerged or floating in a fluid has a buoyant force acting on it with a magnitude equal to the weight of the fluid displaced. Direction is upwards. \[F_{buoy}=\rho_{fluid}V'g\]
+    \1 where $V'$ is the volume of the system immersed in the fluid; if the system is totally submerged, $V'=V$
+    \1 a system will float in any liquid with a density greater than the avg. density of the system.
+\end{outline}
+\subsection{The center of buoyancy}
+\begin{outline}
+    \1 The weight acts at the center of mass of the object, which depends on the shape and mass distribution of the object. 
+    \1 Buoyant force acts at the position of the center of mass of the fluid imagined to be in the hole created by the object in the fluid, a point known as the center of buoyancy. 
+    \1 For a totally submerged system to be in stable equilibrium, the center of mass must be below the center of buoyancy.
+    \1 The point of intersection of the original line of action of the buoyant force with the new line of action of the buoyant force is known as the \textbf{metacenter}
+    \1 if the elevation of the metacenter is above the elevation of the cm, the system will return to its original orientation when tilted and the floating equilibrium is stable. If the elevation of the metacenter is below the cm, then the system is in unstable equilibrium bc the torque of the buoyant force accentuates the tilt, causing the system to roll over.
+    \1 a floating system is in stable equilibrium if the metacenter is above the cm in every possible roll. The same is true for submerged systems. 
+\end{outline}
+\subsection{Surface tension}
+\begin{outline}
+    \1 some objects more dense than certain liquids can float due to increased intermolecular forces at the surface of the liquid. 
+    \1 magnitude of surface tension force is \(\gamma\ell\) where $\gamma$ is the coefficient of surface tension of the liquid and $\ell$ is the perimeter of the part of the floating object in contact with the liquid. 
+\end{outline}
+\subsection{Capillary action}
+\begin{outline}
+    \1 The forces between a molecule and another molecule of a liquid are cohesive forces, and forces between a molecule of liquid and another material are adhesive forces. 
+    \1 contact angle $\theta_{cont}$, angle b/w vertical direction of container and surface of liquid at wall of container. 
+        \2 angles less than 90, concave meniscus and wetting occurs. 
+        \2 angles greater than 90, no wetting and convex meniscus. 
+    \1 when wetting occurs, surface tension draws the liquid up a thin tube inserted into the liquid; capillary action. Continues until surface tension equals the weight of the liquid in the tube. \[\gamma\ell\cos{\theta_{cont}}=mg\]
+    \1 If tube has circular cross section, \[h=\dfrac{2\gamma\cos{\theta_{cont}}}{\rho gr}\]
+\end{outline}
+\subsection{Fluid dynamics: Ideal fluid}
+\begin{outline}
+    \1 \textbf{Ideal fluid:}
+        \2 no viscous or frictional effects
+        \2 flow is steady, that is, velocity doesn't change with time
+        \2 density is constant; incompressible flow
+        \2 no rotational currents, that is, no turbulence
+\end{outline}
+\subsection{Equation of flow continuity}
+\begin{outline}
+    \1 A small particle of flowing incompressible fluid follows a path called a streamline. A set of streamlines makes up a flow tube.
+    \1 eqn of flow continuity:
+    \1 At any two points along a flow tube, \[\rho_1A_1v_1=\rho_2A_2v_2\]
+    \1 For incompressible fluids, density is constant; \[A_1v_1=A_2v_2\]
+\end{outline}
+\subsection{Bernoulli's Principle for Incompressible Ideal Fluids}
+\begin{outline}
+\0 \[P_1+\dfrac{1}{2}\rho v^2_1+\rho gy_1=P_2 +\dfrac{1}{2}\rho v^2_2+\rho gy_2\]
+    \1 In other words, the quantity \(P+\dfrac{1}{2}\rho v^2+\rho gy\) has the same value at every point along a flow tube. 
+    \1 If the fluid isn't moving, \[P=P_0-\rho gy\]
+    \1 In a horizontal pipe, \[P_1+\dfrac{1}{2}\rho v^2_1=P_2 +\dfrac{1}{2}\rho v^2_2\]
+    \1 In other words, pressure decreases as the speed of the fluid increases. 
+\end{outline}
+\subsection{Nonideal Fluids}
+\begin{outline}
+    \1 coefficient of viscosity $\eta$- measure of a fluid's resistance to flow
+\0 \[\eta=\dfrac{F/A}{\Delta v/\Delta y}\]
+    \1 imagine viscous fluids to be a series of planes of thin fluid layers stacked on top of each other; each plane exerts a frictional/viscous force on the layers it's in contact with
+\end{outline}
+\subsection{Viscous Flow}
+\begin{outline}
+    \1 Poiseuille's law, for circular pipes \[|\Delta P|=\dfrac{8}{\pi r^4}Q\eta\ell\]
+\end{outline}
+\section{Waves}
+\subsection{What is a wave?}
+\begin{outline}
+    \1 A classical wave is a propagating disturbance that transfers energy and momentum at its own characteristic speed from one region of space to another with little if any mass transfer.
+\end{outline}
+\subsection{Longitudinal and Transverse Waves}
+\begin{outline}
+    \1 Waves whose oscillation is along the line the wave propagates are longitudinal waves. 
+    \1 Waves whose oscillation is perpendicular to the line along which the wave propagates are transverse waves
+    \1 The plane in which the oscillations of a transverse wave occur is the plane of polarization of the transverse wave. 
+    \1 waves can be either or both transverse and longitudinal
+\end{outline}
+\subsection{Wavefunctions, waveforms and oscillations}
+\begin{outline}
+    \1 wavefunction $\Psi$ represents how a wave propagates through space and time; therefore it is a function of space and time; \(\Psi(x,y,z,t)\)
+    \1 waveform - freezing a wave in time by taking a sort of snapshot of it at a certain point in time; \(\Psi(x,y,z,t_0)\)
+    \1 oscillation; imagine a specific point \((x_0,y_0,z_0)\) and examine its behavior as a function of time. 
+\end{outline}
+\subsection{Waves propagating in one, two, and three dimensions}
+\begin{outline}
+    \1 peaks are crests and minima are troughs
+    \1 wavelength is distance from crest to crest or trough to trough
+    \1 wave train - area in space where waveform is nonzero
+    \1 Waveforms with wave trains of finite extent are wavepackets. 
+\end{outline}
+\subsection{One-D waves at constant velocity}
+\begin{outline}
+    \1 One-D wave propagating at constant speed $v$ for increasing values of $x$ is \(\Psi(x-vt)\)
+    \1 One-D wave propagating at constant speed $v$ for decreasing values of $x$ is \(\Psi(x+vt)\)
+\end{outline}
+\subsection{The classical wave equation for one-d waves}
+\begin{outline}
+    \1 Classical wave equation for one-d waves is \[\dfrac{\partial^2\Psi}{\partial x^2}-\dfrac{1}{v^2}\dfrac{\partial^2\Psi}{\partial t^2}=0\]
+\end{outline}
+\subsection{Periodic waves}
+\begin{outline}
+    \1 waves that periodically repeat themselves are periodic waves. 
+\0 \[v=f\lambda=\dfrac{\lambda}{T}\]
+\end{outline}
+\subsection{Sinusoidal (harmonic) waves}
+\begin{outline}
+\0 \[\Psi(x,t)=A\cos\left[k(x-vt)\right]\] where \(k(x-vt)\) is measured in radians and not degrees.
+    \1 waveform of a sinusoidal wave at $t=0$ \[\Psi(x,0\text{ s})=A\cos(kx)\]
+    \1 the constant $k$ is \[k=\dfrac{2\pi\text{ rad}}{\lambda}\] which is known as the angular wavenumber, which represents the number of wavelengths in exactly $2\pi$ meters. 
+    \1 standard form of a sinusoidal wave is \[\Psi(x,t)=A\cos(kx-\omega t)\]
+\end{outline}
+\subsection{Waves on a string}
+\begin{outline}
+    \1 wave speed on a string is \[v=\sqrt{\dfrac{F}{\mu}}\] where $F$ is the tension in the string and $\mu$ is the linear mass density $m/\ell$
+    \1 In solids, the speed of sound is \[v_{solid}=\sqrt{\dfrac{E}{\rho}}\] where $E$ is the young's modulus of the material and $\rho$ is the density
+    \1 In liquids, the speed of sound is \[v_{liquid}=\sqrt{\dfrac{B}{\rho}}\] where $B$ is the bulk modulus. 
+\end{outline}
+\subsection{Reflection and transmission of waves}
+\begin{outline}
+    \1 rope with fixed end, reflects and changes phase by $\pi$. Flips.
+    \1 rope with free end, reflects but doesn't change phase. No flip. 
+    \1 wave traveling through a boundary of two strings with diff. mass per unit length. Both transmission and reflection. 
+\end{outline}
+\subsection{energy transport via mechanical waves}
+\begin{outline}
+\1 power transfer in a mechanical wave is \[P=\dfrac{1}{2}\mu\omega^2A^2v\] (in a string). Power transfer is proportional to the square of angular frequency, square of amplitude, and to the propagation speed of the wave. 
+\end{outline}
+\subsection{Wave Intensity}
+\begin{outline}
+    \1 Intensity of a wave is the average power transmitted by the wave through one square meter oriented perpendicular to the direction the wave is propagating
+    \1 From previous eqn, intensity of a wave is proportional to square of amplitude and square of frequency. 
+    \1 Intensity from a point source is \[I=\dfrac{P}{4\pi r^2}\] inverse square
+\end{outline}
+\subsection{What is a sound wave?}
+\begin{outline}
+    \1 sound exists in an elastic material if a propagating disturbance is a variation in the ambient density caused by a bulk shift in the positions of the particles of the material away from their nominal equilibrium positions. \1 Density wave disturbance $\Psi_{density}$ is $\pi/2$ rad out of phase with particle position wave disturbance $\Psi_{position}$
+\end{outline}
+\subsection{sound intensity and sound level}
+\begin{outline}
+    \1 threshold of hearing is \(I_0\equiv10^{-12}\text{ W/m}^2\)
+    \1 Intensity level $\beta$ is \[\beta\equiv(10\text{ dB})\log_{10}\dfrac{I}{I_0}\]
+    \1 Each factor of 10 increase in sound intensity produces an additive change in sound level of 10 dB
+\end{outline}
+\subsection{Acoustic Doppler effect}
+\begin{outline}
+    \1 general equation, linear motion \[f'=f\left(\dfrac{v\pm v_{obs}}{v\mp v_{source}}\right)\]
+    \1 $+$ sign if source is moving away and $-$ sign if source is moving toward observer
+    \1 even more general equation, if the medium is moving \[f'=f\left(\dfrac{v\pm v_{med}\pm v_{obs}}{v\pm v_{med}\mp v_{source}}\right)\]
+\end{outline}
+\subsection{Shock waves}
+\begin{outline}
+    \1 Speed of the source exceeds the speed of sound
+    \1 Mach number $=\dfrac{v_{source}}{v}$
+    \1 mach angle $\phi$,  \(\sin\phi=\dfrac{1}{\text{Mach number}}\)
+\end{outline}
+\subsection{Diffraction of waves}
+\begin{itemize}
+    \item Diffraction - spreading out of waves after they pass through or around obstacles or openings comparable in size to the wavelength. 
+\end{itemize}
+\subsection{Principle of superposition}
+\begin{outline}
+\1 When two or more similar types of waves exist simultaneously at a point in space, we say the waves interfere with each other. If the resulting wave disturbance at a point is greater than that produced by any of the waves acting alone, we say the waves exhibit constructive interference. If the resulting disturbance is less that that produced by the waves acting alone, the waves exhibit destructive interference. 
+\end{outline}
+\subsection{Standing waves}
+\begin{outline}
+\1 locations with 0 wave disturbance are nodes
+\1 successive nodes are separated in space by half a wavelength, as well as antinodes on a string fixed at both ends
+\1 Disturbance resulting from superposition of two waves of equal amplitude and frequency traveling in opposite directions is called a standing wave
+\1 permitted wavelengths on a string are \[\lambda_n=\dfrac{2\ell}{n}\] where $n$ is a positive integer
+\1 frequencies of higher harmonics are integer multiples of the fundamental frequency $f_1$
+\1 frequencies that may exist on the string are called eigenfrequencies
+\1 collection of allowed frequencies and their amplitudes is called the frequency spectrum of the system. 
+\1 closed pipe frequencies \[\lambda_n=\dfrac{4\ell}{n}\] always a node at the closed end, goes 1,3,5$f$
+\1 open pipe frequencies \[\lambda_n=\dfrac{2\ell}{n}\] always antinodes at open ends, goes 1,2,3$f$
+\end{outline}
+\subsection{Wave groups and beats}
+\begin{outline}
+\1 If the speeds of waves of different frequency are not the same, we say there is dispersion; which means that the speeds of individual waves depend on the particular wavelength or frequency. 
+\0 \[f_b=|f_1-f_2|\]
+\end{outline}
+\subsection{Fourier analysis and the uncertainty Principles}
+\begin{outline}
+\1 fourier analysis - modeling things as sinusoidal functions
+\1 the frequencies in a Fourier representation of a periodic oscillation always are harmonics of the fundamental frequency of the periodic oscillation
+\1 any periodic function can be represented by a fourier sum of harmonic, sinusoidal functions having a discrete spectrum. 
+\0 \[\Delta t\Delta\omega\approx2\pi\text{ rad}\]
+\1 which means that the shorter the duration of the pulse (of a wave), the greater the spread of the angular frequencies in its Fourier representation, and vice versa. Also, \[\Delta x\Delta k\approx2\pi\text{ rad}\]
+\1 which are known as uncertainty relations.
+\end{outline}
+\end{document}
