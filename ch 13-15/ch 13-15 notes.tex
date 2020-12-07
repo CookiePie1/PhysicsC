@@ -1,0 +1,290 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\title{Ch. 13-15 Notes}
+\author{John Yang}
+\setcounter{section}{+12}
+
+\begin{document}
+\maketitle
+\section{Temperature, heat transfer, and the first law of \\thermodynamics}
+\subsection{Simple thermodynamic systems}
+\begin{outline}
+\1 A simple thermodynamic system is a system that is macroscopic, homogeneous, isotropic, uncharged, chemically inert, and experiences no change in its total mechanical energy. The system is sufficiently large that surface effects can be neglected. No electric or magnetic fields are present, and gravitational fields are irrelevant.
+\end{outline}
+\subsection{Temperature}
+\begin{outline}
+\1 Colloquially the word "heat" is confused with "temperature"; in physics and the sciences, the two words are not synonymous.
+\end{outline}
+\subsection{work, heat transfer, temperature, and thermal equilibrium}
+\begin{outline}
+\1 Work can change the state of mechanical equilibrium of the system. Work can also change the internal energy of a system. 
+\1 Heat is defined as the the energy which is transferred between the two systems simply because the two systems simply because they are at different temperatures
+\end{outline}
+\subsection{the zeroth law of thermodynamics}
+\begin{outline}
+\1 If systems A and B are in thermal equilibrium with a third system C, then A and B are in equilibrium with each other.
+\end{outline}
+\subsection{thermometers and temperature scales}
+\begin{outline}
+\1 thermometer - a device for measuring temperature
+\1 relies on a physical change of matter (thermometric property)
+\1 ideal gas temp scale, triple point of water is set to be 273.16K, which means that 0K is absolute 0.
+\1 One Kelvin is 1/273.16 of the temperature of the triple point of water.
+\1 A degree on the kelvin and celsius scale is the same but the 0s of each scale are different. \[T_K=t_{celsius}+273.15 K\]
+\1 Temperature changes on the celsius and kelvin scale are the same bc the degrees are tho same size, but the two scales never indicate precisely the same numerical reading for the temperature of a system bc of the diff 0s on each scale
+\1 absolute temp scale is a truly thermodynamic temp scale and is used to quantify any temp, including those close to the abs 0 range of temperature. no upper limit.
+\end{outline}
+\subsection{temperature conversions between F and C}
+\begin{outline}
+\0 \[t_{fahrenheit}=\dfrac{9\degree F}{5\degree C}t_{celsius}+32\degree F\]
+\0 \[t_{celsius}=\dfrac{5\degree C}{9\degree F}\left(t_{fahrenheit} - 32\degree F\right)\]
+\end{outline}
+\subsection{thermal effects in solids and liquids: size}
+\begin{outline}
+\1 thermal expansion - scales everything up proportionally in all dimensions
+\1 linear expansion: \[\Delta\ell=\alpha\ell\Delta T\] where $\alpha$ is the coefficient of linear expansion of the material
+\1 coefficient of area expansion is $2\alpha$
+\1 coefficient of volume expansion is $3\alpha$
+\0 \[\Delta A=2\alpha A\Delta T\] \[\Delta V=3\alpha\Delta T\]
+\end{outline}
+\subsection{thermal effects in ideal gasses}
+\begin{outline}
+\1 Boyle's law: \[PV=\text{ constant}\]
+\1 Ideal gas law, \[PV=NkT=nRT\] where Boltzmann constant $k=1.380066\times10^{-23}\text{ J/K}$
+\1 $N$ $=$ number of molecules, $n$ $=$ number of moles
+\1 Universal gas constant R $= 8.31452 \text{ J/mol}\cdot\text{K}$
+\end{outline}
+\subsection{calorimetry}
+\begin{outline}
+\1 heat transfer from the warmer system is to the cooler system. By convention, heat transfer from a system is considered negative; heat transfer to a system is considered positive
+\0 \[Q=mc\Delta T\]
+\1 where $c$ is the specific heat, which is the heat transfer req'd to raise one kg of the material by 1 degree C
+\1 we consider specific heat to be independent of temperature as long as the phase is not changing
+\0 \[Q=mL\]
+\1 where $L$ is the latent heat of vaporization or fusion
+\end{outline}
+\subsection{Reservoirs}
+\begin{outline}
+\1 A system in thermal contact with a reservoir experiences heat transfer to or from the system until it has the same temp as the reservoir. The temp of the reservoir does not change despite the heat transfer
+\1 The word reservoir in thermodynamics means either a) a huge thermal mass or b) a region that maintains a fixed temp regardless of heat transfer. 
+\end{outline}
+\subsection{mechanisms for heat transfer}
+\begin{outline}
+\1 Conduction - heat transfer by direct contact
+\1 heat flow: \[\dfrac{dQ}{dt}=A\dfrac{T_H-T_C}{R_{total}}\] \[R\equiv \dfrac{d}{k}\]
+\1 where $R$ is the R-value of a material; $d$ is the thickness and $k$ is the thermal conductivity, $A$ is the area in contact
+\1 R values are additive (ex. different materials in series)
+\1 materials in parallel: \[\dfrac{dQ}{dt}=(T_H-T_C)\left(\dfrac{A_1}{R_1}+\dfrac{A_2}{R_2}\right)\]
+\1 Convection - heat transfer from the movement or circulation of a material
+\1 Radiation - heat transfer by light
+\1 convection and conduction require a medium; radiation doesn't. 
+\1 all objects emit radiation; \[\dfrac{dQ}{dt}=-eA\sigma T^4\] where $e$ is the emissivity (between 0 and 1; a perfect blackbody has emissivity 1) and $A$ is the surface area
+\1 $\sigma$ is the Stefan-Boltzmann constant; \(\sigma=5.760\times10^{-8}\text{ W/(m}^2\cdot\text{K}^4\text{)}\)
+\1 objects also absorb radiation; \[\dfrac{dQ}{dt}=+aA\sigma T^4\] where $a$ is a pure number b/w 0 and 1 that describes how well the object absorbs radiation; a perfect absorber has $a=1$; $e=a$
+\1 total heat flow (to surroundings and absorbed by the system): \[\dfrac{dQ}{dt}=eA\sigma\left(T^4_{surroundings}-T^4_{object}\right)\]
+\end{outline}
+\subsection{thermodynamic processes}
+\begin{outline}
+\1 Quasistatic processes - when a thermodynamic system undergoes a state change so slovly that it remains in equilibrium the whole time. Idealization.
+\1 Reversible processes - at any instant small differetial changes can be reversed
+\1 processes:
+\2 Isothermal - constant temp
+\2 Isobaric - constant pressure
+\2 Isochoric - constant volume
+\2 Adiabatic/Isentropic - no heat transfer
+\1 non reversible processes are irreversible. All processes in nature are irreversible. 
+\end{outline}
+\subsection{energy conservation: the first law of thermodynamics and the CWE 
+theorem}
+\begin{outline}
+\1 Total mechanical energy $E$ - associated with the position and macroscopic motion of the system
+\1 Internal energy $U$ - individual kinetic and potential energies of each individual molecule. 
+\2 $\Delta U$ is easier to measure than $U$ itself
+\1 heat transfer is not the same as internal energy
+\1 A system in thermal equilibrium does not have an amount of heat, but it does have an amount of internal energy
+\1 Heat transfer is not a state variable, internal energy is.
+\1 Physical work done on the system - $W'$, can change the internal energy of the system and the mechanical energy
+\2 example - compressing a gass in an insulated piston has no heat transfer but work is done and $U$ increases
+\1 Fundamental classical statement of CWE; \[Q+W'=\Delta U\Delta E\]
+\1 First law of thermodynamics, \[Q=\Delta U+W\] where $W$ is the work done BY the system on the surroundings
+\end{outline}
+\subsection{the connection between the CWE theorem and the general statement of energy conservation}
+\begin{outline}
+\1 Example - momentum is conserved in an inelastic collision but where did the KE go? Increased the temperature of the system, sound energy, etc.
+\end{outline}
+\subsection{work done by a system on its surroundings}
+\begin{outline}
+\1 Work done by a gas in a insulated cylinder \[W=\int_{V_i}^{V_f}PdV\]
+\2 area under the curve of a P-V diagram
+\1 For isobaric processes, \[W=P_i\Delta V\]
+\1 For isochoric processes, W=0
+\1 For an ideal gas in an isothermal process, \[W=nRT\ln\dfrac{V_f}{V_i}\]
+
+\end{outline}
+\subsection{work done by a gas taken around a cycle}
+\begin{outline}
+\1 Cycle - closed curve on a P-V diagram
+\1 Work done by the gas in a cycle is the area enclosed by the curve, is positive if it is clockwise
+\end{outline}
+\subsection{applying the first law of thermodynamics: changes of state}
+\begin{outline}
+\1 For melting and boiling problems, use \(Q=mc\Delta T\) and \(Q=mL\)
+\end{outline}
+\section{Kinetic theory} 
+\subsection{background for the kinetic theory of gases}
+\begin{outline}
+\1 static model - molecules or atoms don't move
+\1 kinetic model - gas is formed of a bunch of tiny particles moving at very high speeds
+\end{outline}
+\subsection{The ideal gas approximation}
+\begin{outline}
+\1 Ideal gasses: \[PV=nRT\]
+\2 Number of particles is very large
+\2 Volume containing the gas is much larger than the total volume actually occupied by the gas particles themselves
+\2 Dynamics of the particles is governed by Newton's laws
+\2 The particles are equally as likesy to be moving in any direction
+\2 All collisions are elastic
+\2 The gas is in thermal equilibrium with its surroundings
+\2 The particles of the gas are indistinguishable
+\end{outline}
+\subsection{The pressure of an Ideal Gas}
+\begin{outline}
+\1 mean square speed is $\langle v^2\rangle$
+\0 \[v_{rms}\equiv\sqrt{\langle v^2\rangle}\]
+\1 pressure of an ideal gas: \[P=\dfrac{nM}{3V}\langle v^2\rangle\] where $n$ is the number of moles and $M$ is the molar mass of the gas
+\end{outline}
+\subsection{the meaning of the absolute temperature}
+\begin{outline}
+\1 Temperature of the gas is a measure of the avg translational KE of the particles \[KE_{avg}=\dfrac{3}{2}kT\]
+\1 average speed is less than rms speed
+\end{outline}
+\subsection{the internal energy of a monatomic idea gas}
+\begin{outline}
+\1 Internal energy of a monatomic ideal gas: \[U=\dfrac{3}{2}nRT\]
+\end{outline}
+\subsection{the molar specific heats of an ideal gas}
+\begin{outline}
+\1 Constant volume monatomic diatomic gas: \[c_V=\dfrac{3}{2}R=12.7\text{ J/mol}\]
+\1 constant pressure specific heat: \[c_P=c_V+R\]
+\2 monatomic ideal gasses: \(c_P=20.79\text{ J/mol}\)
+\2 assumes that $U$ is a function of $T$
+\end{outline}
+\subsection{Complications arise for diatomic and polyatomic gases}
+\begin{outline}
+\1 involves internal energy for each individual molecule
+\end{outline}
+\subsection{degrees of freedom and the equipartition of energy theorem}
+\begin{outline}
+\1 degrees of freedom - the number of distinct quadratic generalized coordinates needed to specify the microscopic total mechanical energy of one particle of the system, for example translational x, translational y, translational z, rotational
+\1 for a system sf particles in thermal equilibrium, the average energy associated with each active degree of freedom of a particle is the same. For a system with $f$ active degrees of freedom, the average energy per particle is $f$ times as great as for a system with a single degree of freedom
+\1 Average KE for each degree of freedom is \[\dfrac{1}{2}kT\]
+\end{outline}
+\subsection{specific heat of a solid}
+\begin{outline}
+\1 For an ideal solid, \[U=3nRT\]
+\1 molar specific heat for an ideal solid is \[c\approx3R=24.95\text{ J/mol}\cdot K\]
+\end{outline}
+\subsection{some failures of classical kinetic theory}
+\begin{outline}
+\1 A monatomic gas atom has only 3 degrees of freedom associated with translational motion, each with its average energy $kT/2$; these atoms show no further degrees of freedom, rotation or otherwise according to quantum mechanics
+\1 It is quantum mechanics that dictates that diatomic dumbell molecules have only 2 (not 3) degrees of freedom, associated with the rotational KE about the X and Y axes
+\1 ratio of specific heats $\gamma$: \[\gamma\equiv\dfrac{c_p}{c_V}=\dfrac{5}{3}=1.67\] for monatomic ideal gasses and \[\gamma\equiv\dfrac{c_p}{c_V}=\dfrac{7}{5}=1.4\] for diatomic ideal gasses
+\end{outline}
+\subsection{quantum mechanical effects}
+\begin{outline}
+\1 there are energy gaps b/w allowed energies of particles
+\1 size of the gaps gets smaller as the system becomes larger
+\1 assume that monatomic gasses have 3 degrees of freedom and diatomic gasses have 5
+\end{outline}
+\subsection{adiabatic process for an ideal gas}
+\begin{outline}
+\1 adiabatic - no heat transfer
+\1 for adiabatic processes, \[dU=-PdV\]
+\0 \[PV^\gamma=\text{constant}\]
+\1 Work done in an adiabatic process is \[W=-\Delta U\]
+\end{outline}
+\section{The second law of Thermodynamics}
+\subsection{Why do some things happen, while others do not?}
+\begin{outline}
+\1 rocks can't jump up a cliff without work because it requires energy
+\1 heating a pizza requires external heat
+\1 Winning the lottery and thermodynamics
+\2 statistically, there's always a chance that some process will spontaneously reverse itself but the chances are so small that it just doesn't happen, like winning the lottery or a puddle of water spontaneously freezing
+\end{outline}
+\subsection{Heat engines and the second law of thermodynamics}
+\begin{outline}
+\1 an engine is a system that does work on a closed P-V cycle. If it is clockwise, it is a heat engine and if it is CCW then it is a refrigerator
+\1 total change in internal energy of the engine is 0 since the cycle is closed
+\1 efficiency: \[\epsilon\equiv\dfrac{|W|}{|Q_H|}\]
+\1 the engine takes $Q_H$ from the hot reservoir and outputs $W$ and $Q_C$ to the cold reservoir
+\1 second law of thermodynamics forbids perfect heat engines
+\0 \[W=|Q_H|-|Q_C|\] which means that for any heat engine, \[\epsilon=1-\dfrac{|Q_C|}{|Q_H|}\]
+\end{outline}
+\subsection{The Carnot heat engine and its efficiency}
+\begin{outline}
+\1 Carnot engine - ideal gas goes through alternating isothermal and adiabatic quasi-static process around a complete cycle
+\1 Steps are isothermal expansion, adiabatic expansion, isothermal compression and adiabatic compression
+\1 Efficiency for carnot engines only is \[\epsilon_{carnot}=1-\dfrac{T_C}{T_H}\] where temps are in Kelvin. 
+\end{outline}
+\subsection{absolute zero and the third law of thermodynamics}
+\begin{outline}
+\1 third law of thermodynamics - absolute zero is unattainable
+\end{outline}
+\subsection{refrigerator engines and the second law of thermodynamics}
+\begin{outline}
+\1 performance of a refrigeration engine: \[K=\dfrac{Q_C}{W}\] where $K$ is the coefficient of performance of the refrigeration engine. 
+\1 for refrigerators \[K=\dfrac{|Q_C}{|Q_H|-|Q_C|}=\dfrac{1}{\dfrac{|Q_H}{Q_C}-1}\]
+\1 Perfect refrigerators don't exist
+\end{outline}
+\subsection{The Carnot refrigeration engine}
+\begin{outline}
+\1 Carnot refrigerator is the carnot heat engine in reverse
+\1 efficiency of a carnot refrigerator: \[K_{Carnot}=\dfrac{1}{\dfrac{|T_H}{T_C}-1}\] for carnot refrigerators only, and temps in Kelvin
+\end{outline}
+\subsection{the efficiency of real heat engines and refrigerator engines}
+\begin{outline}
+\1 The efficiency of a Carnot engine is the maximum efficiency of a heat engine operating between the two reservoirs
+\1 A carnot refrigerator has maximum coefficient of performance
+\end{outline}
+\subsection{A new concept: Entropy}
+\begin{outline}
+\1 Entropy $S$, $[\text{J/K}]$ is a state variable
+\1 Only changes in Entropy are significant
+\1 Second law of thermo is mainly concerned with entropy
+\0 \[\Delta S=\int_{i}^{f}\dfrac{dQ}{T}\]
+\1 Entropy change equations: 
+\2 Ideal gas in a quasi-static reversible process \[\Delta S=nc_V\ln\dfrac{T_f}{T_i}+nR\ln\dfrac{V_f}{V_i}\]
+\2 Melting or boiling a mass $m$: \[\Delta S=\dfrac{mL}{T}\]
+\2 Freezing or condensation of a mass $m$: \[\Delta S=-\dfrac{mL}{T}\]
+\2 Warming or cooling a solid or liquid of mass $m$: \[\Delta S=mc\ln\dfrac{T_f}{T_i}\]
+\2 Heat transfer $|Q|$ TO a reservoir at temperature $T_C$: \[\Delta S=+\dfrac{|Q|}{T_C}\]
+\2 Heat transfer $|Q|$ FROM a reservoir at temperature $T_H$: \[\Delta S=-\dfrac{|Q|}{T_H}\]
+\2 Heat engine or refrigerator engine in a complete cycle: \[\Delta S=0\]
+\2 Adiabatic process: \[\Delta S=0\]
+\end{outline}
+\subsection{Entropy and the Second law of thermodynamics}
+\begin{outline}
+\1 General statement of the second law of thermodynamics: The total entropy change of an isolated system is always greater or equal to zero. The total entropy change is 0 only for reversible processes. 
+\end{outline}
+\subsection{the direction of heat transfer: a consequence of the second law}
+\begin{outline}
+\1 Heat does not spontaneously flow from cold to hot reservoirs
+\end{outline}
+\subsection{A statistical interpretation of the entropy}
+\begin{outline}
+\1 Boltzmann Equation: \[S\equiv k\ln\Omega\] where $\Omega$ is the number of microstates associated with the given macrostate
+\end{outline}
+\subsection{Entropy maximization and the arrow of time}
+\begin{outline}
+\1 time direction is more apparent when the system is larger (video of billiard balls colliding vs video of a waterfall)
+\1 Changing to higher entropy makes arrow of time apparent, 0 change is not apparent, and negative change is unbelievable
+\end{outline}
+\subsection{Extensive and intensive state variables}
+\begin{outline}
+\1 Extensive - depends on size
+\1 Intensive - doesn't depend on size
+\end{outline}
+\end{document}
