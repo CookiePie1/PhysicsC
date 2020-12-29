@@ -1,0 +1,194 @@
+\documentclass[twocolumn]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\title{Ch. 16-17 Notes}
+\author{John Yang}
+\setcounter{section}{+15}
+
+\begin{document}
+\maketitle
+\section{Electric Charges, Electrical Forces, and the Electric Field}
+\subsection{The discovery of electrification}
+\begin{outline}
+	\1 Electric Force is a central force
+	\1 Electric Force is a conservative force
+	\1 Glass rubbed with silk is positively charged
+	\1 Amber or rubber rubed with fur is negatively charged
+	\1 "positive and negative" were arbitrarily chosen
+	\1 conductors - conduct electricity
+	\1 insulators - don't conduct, also called dielectrics
+	\1 charge ($q$ or $Q$) is scalar
+	\1 Charge is conser
+	\1 similar charges repel and opposite charges attract with equal and opposite forces
+\end{outline}
+\subsection{Polarization and Induction}
+\begin{outline}
+	\1 Neutrally charged objects are also attracted by charged objects
+	\1 Polarization - charge separation in electrically neutral materials caused by the presence of a nearby electrically charged object
+	\1 Charging by Induction
+		\2 Take a negatively charged object and hold it fixed near a neutral conductor. The conductor becomes polarized. 
+		\2 Ground the conductor to the earth. 
+		\2 Remove the grounding wire. The conductor is now positively charged because the electrons have escaped to the earth and cannot return.
+
+\end{outline}
+\subsection{Coulomb's Force Law for Pointlike Charges}
+\begin{outline}
+	\1 Coulomb's law: \[F_{elec}=k\dfrac{|q||Q|}{r^2}\] where \[k=\dfrac{1}{4\pi\epsilon_0}\] where \(k=9.0\times10^9 \text{ N}\cdot\text{m}^2\text{/C}^2\) and \(\epsilon_0=8.85\times10^-12\text{ F/m}\)
+	\1 Electric force is a vector
+	\1 principle of superposition - total electric force on a changed particle is the vector sum of all the electric forces on the particle
+\end{outline}
+\subsection{Charge Quantization}
+\begin{outline}
+	\1 Fundamental unit of charge: \(e=1.602177\times10^{-19}\text{ C}\)
+	\1 Charge can only exist in multiples of $e$; that is, \(q=ne\)
+
+\end{outline}
+\subsection{The electric field of Static Charges}
+\begin{outline}
+	\1 Electrical field at a point in space is defined as \[\vec{F_e}\equiv q_{test}\vec{E}\] where $F_e$ is the force on the test charge $q_{test}$ at its location. 
+	\1 Electric field is also the force per coulomb
+	\1 The test charge is not significant enough to alter the distribution of charge creating the field. 
+	\1 the test charge is free to accelerate in response to the field it experiences. 
+	\1 The electric field depends on the specific arrangement of the charges creating it. 
+\end{outline}
+\subsection{The electric field of pointlike charge distributions}
+\begin{outline}
+	\1 $\vec{E}$ at a distance from a point charge: \[\vec{E}=k\dfrac{Q}{r^2}\hat r\]
+\end{outline}
+\subsection{A way to visualize electric field: electric field lines}
+\begin{outline}
+	\1 Electric field line conventions: 
+		\2 The electric field lines begin on positive charges and end on negative ones.
+		\2 Very close to pointlike charges, the lines are radially symmetric and their number is a measure of the magnitude of the charge. 
+		\2 The number of lines passing through a square meter oriented perpendicular to the lines is proportional to the magnitude of the electric field in that region. 
+	
+\end{outline}
+\subsection{A common molecular charge distribution: the electric dipole}
+\begin{outline}
+	\1 The electric dipole moment is defined as the vector product of the magnitude of either charge times the position vector with respect to the negative charge: \[\vec{p}\equiv|Q|\vec{d}\]
+	\1 While the total force on the dipole is zero in a uniform field, the total torque on the dipole depends on the orientation of the dipole moment vector with respect to the direction of the electric field. 
+
+\end{outline}
+\subsection{The electric Field of Continuous Distributions of Charge}
+\begin{outline}
+	\1 The electric field of a continuous distribution of charge can be thus derived: \[\vec{E}=k\int_{chg dist}\dfrac{dq}{r^2}\hat r\]
+	\1 The electric field at a point in space depends on: 
+		\2 the charge creating the field and its sign 
+		\2 the geometric shape of the charge distribution creating the field;
+		\2 the distance of the point from the charge distribution
+		\2 the placement of the point with respect to the charge distribution (in particular, the location of the point with respect to any symmetry axes associated with the charge distribution)
+	\1 Electric field created by various charge distributions: 
+		\2 A pointlike charge: \[\vec{E}=k\dfrac{Q}{r^2}\hat r\]
+		\2 Dipole along the axis \((z>>d)\) \[\vec{E}=k\dfrac{2p}{z^3}\hat k\] where $z$ is the distance you're measuring from and $d$ is the seperation between the two particles, and $\hat k$ is in the direction towards the positive charge 
+		\2 Dipole in the perpendicular bisector plane: \[\vec{E}_{total}=-k\dfrac{p}{\left(y^2+\dfrac{d^2}{4}\right)^{3/2}}\hat k\] where y is the distance you're measuring, perpendicular to the axis. $\hat k$ is still towards the positive charge. For \(y>>d\), \[\vec{E}_{total}=-k\dfrac{p}{y^3}\hat k\]
+		\2 At a distance from a uniformly charged ring: \[\vec{E}=k\dfrac{zQ}{(z^2+R^2)^{3/2}}\hat z\] where $R$ is the radius of the ring and $z$ is the distance perpendicular to the ring measured from the center. 
+		\2 At a distance from a uniformly changed disk: \[\vec{E}=k\dfrac{2Q}{R^2}\left[1-\dfrac{z}{\sqrt{z^2+R^2}}\right]\hat z\]
+		\2 A uniformly charged infinite sheet: \[E=\dfrac{\sigma}{2\epsilon_0}\] (not vector), $\sigma$ is the charge per unit area 
+		\2 Two infinite uniformly charged sheets with opposite charge: \[E=\dfrac{\sigma}{\epsilon_0}\]
+		\2 A uniformly charged spherical shell: Inside \((r<R)\): \(\vec{E}=0\text{ N/C}\), outside \((r>R)\): \[\vec{E}=k\dfrac{Q}{r^2}\hat r\]
+		\2 Inside a uniformly charged sphere \((r<R)\): \[\vec{E}=k\dfrac{Q}{R^3}r\hat r\]
+		\2 Outside a uniformly charged sphere \((r>R)\): \[\vec{E}=k\dfrac{Q}{r^2}\hat r\]
+		\2 An infinitely long charge in a straight line: \[\vec{E}=k\dfrac{2\lambda}{r}\hat r\], where $\lambda$ is the charge per unit length and $r$ is measured raidally away from the line. 
+
+\end{outline}
+\subsection{Motion of a charged particle in a uniform electric field: an electrical projectile}
+\begin{outline}
+	\1 Experiences a constant force in both magnitude and direction because the field is uniform.
+\end{outline}
+\subsection{Gauss' law for electric fields}
+\begin{outline}
+	\1 flux $\Phi$ is: \[d\Phi=\vec{A}\cdot d\vec{S}\]
+	\1 Gauss' law for E fields: \[\int_{\text{clsd srfc}}\vec{E}\cdot d\vec{S}=\dfrac{Q_{\text{enclosed}}}{\epsilon_0}\], where you integrate over the closed surface $\vec{S}$, and $Q_{\text{enclosed}}$ is the charge enclosed by the surface $\vec{S}$
+	\1 flux is the flux of the field caused by all charges everywhere, even those not enclosed by the gaussian surface. 
+\end{outline}
+\subsection{Calculating the Magnitude of the electric field using Gauss' law}
+\begin{outline}
+	\1 Gauss' law is general. That is, the closed surface is arbitrary and you can choose a surface that can help you find the magnitude of a field in question. 
+\end{outline}
+\subsection{Conductors}
+\begin{outline}
+	\1 Charge separation in a conductor continues until the total field inside the conductor is zero
+	\1 Therefore, no free charge can exist anywhere within the conductor.
+	\1 That means that any free charge must be on the surface of the conductor. 
+	\1 The electric field vector at the surface of a conductor must be perpendicular to the surface. 
+	\1 The magnitude of the field at the surface is given by \[E\dfrac{\sigma}{\epsilon_0}\] where $\sigma$ is the surface charge density
+\end{outline}
+\subsection{Other electrical materials}
+\begin{outline}
+	\1 semiconductors - not good conductors nor good insulators 
+	\1 superconducors - lose all electrical resistance
+\end{outline}
+\section{Electric Potential Energy and the Electric Potential}
+\subsection{Electric potential energy and the electric potential}
+\begin{outline}
+	\1 Electric force is a conservative force
+	\1 Electric potential is defined as the potential energy per unit charge at a point in space: \[V\equiv\dfrac{PE_{\text{of q}}}{q}\] Units: volt (V$=$J/C)
+	\1 This means that \[PE=qV\]
+	\1 Electric potential and electric PE are scalars.
+	\1 Potential difference or change in potential b/w two points: \[\Delta V=-\int^f_i\vec{E}\cdot d\vec{r}\]
+	\1 An electrical ground is any location where the potential is zero. You can choose where the ground is. 
+\end{outline}
+\subsection{The electric potential of a pointlike charge}
+\begin{outline}
+	\1 For a point charge, you can choose the location of ground to be infinity (out of convenience/convention)
+	\1 For a point charge, \[V(r)=k\dfrac{Q}{r}\]
+\end{outline}
+\subsection{the electric potential of a collection of pointlike charges}
+\begin{outline}
+	\1 Electric potential is additive
+\end{outline}
+\subsection{The electric potential of continuous charge distributions of finite size}
+\begin{outline}
+	\1 For a charge distribution of finite size, \[V=k\int_{\text{finite chg dst}}\dfrac{dQ}{r}\]
+	\1 The electric potential of various charge distributions: 
+		\2 Two infinite oppositely charged sheets (uniform field): \[V(x)-V(0)=-Ex\]
+		\2 A pointlike charge: \[V(r)=k\dfrac{Q}{r}\]
+		\2 A uniformly charged ring at a distance $z$ from the center along its axis of symmetry: \[V=k\dfrac{Q}{\sqrt{\left(z^2+R^2\right)}}\]
+		\2 A uniformly charged disk at a distance $z$ from the center along its axis: \[V=k\dfrac{2Q}{R^2}\left[\sqrt{\left(z^2+R^2\right)}-z\right]\]
+		\2 Outside a uniformly charged sphere \((r>R)\): \[V(r)=k\dfrac{Q}{r}\]
+		\2 Inside a uniformly charged conducting sphere \((r<R)\): constant \[V=k\dfrac{Q}{R}\]
+		\2 Inside a uniformly charged insulating sphere \((r<R)\): \[V(r)=k\dfrac{Q}{2R}\left(3-\dfrac{r^2}{R^2}\right)\]
+
+\end{outline}
+\subsection{equipotential volumes and surfaces}
+\begin{outline}
+	\1 Equipotentials: volumes, surfaces, lines that have the same potential, that is, \(\Delta V=0\)
+	\2 In a uniform field, equipotentials are planes
+	\2 Outside a pointlike charge, equipotentials are spheres centered at the charge 
+\end{outline}
+\subsection{The relationship between the electric potential and the electric field}
+\begin{outline}
+	\1 Electric field is the negative derivative of potential with respect to $s$, that is \[E_s=-\dfrac{dV}{ds}\]
+	\1 More generally, electric field is the negative gradient of the potential: \[\vec{E}=-\nabla V\]
+\end{outline}
+\subsection{Acceleration of charged particles under the influence of electrical forces}
+\begin{outline}
+	\1 Energy is still conserved. 
+	
+\end{outline}
+\subsection{A new unit of energy: the electron-volt}
+\begin{outline}
+	\0 \[1\text{ eV}=1.602\times10^{-19}\text{ J}\]
+\end{outline}
+\subsection{An electric dipole in an external electric field revisited}
+\begin{outline}
+	\1 Potential energy of the dipole is \[PE_{\text{dipole}}=-\vec{p}\cdot\vec{E}\]
+\end{outline}
+\subsection{The electric potential and electric field of a dipole}
+\begin{outline}
+	\1 If $r$ is close to the dipole (similar to $d$), then \[V_{\text{dipole}}=k\dfrac{p\cos\theta}{r^2}\]
+	\1 If $r$ is much greater than $d$, then \[E_x=-\dfrac{\partial V}{\partial x}=k\dfrac{3zxp}{(x^2+y^2+z^2)^{5/2}}\] \[E_y=-\dfrac{\partial V}{\partial y}=k\dfrac{3zyp}{(x^2+y^2+z^2)^{5/2}}\] \[E_z=-\dfrac{\partial V}{\partial z}=-kp\left[\dfrac{1}{(x^2+y^2+z^2)^{3/2}}-\dfrac{3z^2}{(x^2+y^2+z^2)^{5/2}}\right]\]
+\end{outline}
+\subsection{The potential energy of a distribution of pointlike charges}
+\begin{outline}
+	\1 Potential energy and potential are additive
+	\1 with no external forces, \[W_{\text{elec}}=-PE_{\text{total f}}\]
+\end{outline}
+\subsection{lightning rods}
+\begin{outline}
+	\1 Consider a small sphere connected to a larger sphere by a long wire. The magnitude of the electric field at the smaller shpere is greater than that at the larger sphere. 
+	\1 Lightning rods have very sharp tips. This means that the tip can easily reach the breakdown voltage of air meaning the lightning strikes the lightning rod and not a tree or a building. 
+\end{outline}
+\end{document}
