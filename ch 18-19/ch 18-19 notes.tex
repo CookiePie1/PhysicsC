@@ -1,0 +1,209 @@
+\documentclass[twocolumn]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{mathrsfs}
+\title{Ch. 18-19 Notes}
+\author{John Yang}
+\setcounter{section}{+17}
+
+\begin{document}
+\maketitle
+\section{Circuit Elements, Independent voltage sources, and capacitors}
+\subsection{Terminology, Notation, and Conventions}
+\begin{outline}
+	\1 Potential difference between two points, A and B is defined as: \[\text{potential difference between A and B}\equiv V_A-V_B\] 
+	\1 Polarity markings - (+) and (-) used to denote which location is at a higher potential
+	\1 For circuits, $V$ is the potential difference
+\end{outline}
+\subsection{Circuit Elements}
+\begin{outline}
+	\1 An ideal circuit: 
+		\2 Uses ideal wires - no resistance 
+		\2 An ideal circuit element cannot be subdivided into other ideal circuit element
+		\2 Specific symbols are used to represent each element 
+	\1 By convention, every symbol in a circuit is ideal
+\end{outline}
+\subsection{An Independent Voltage Source: a source of Emf}
+\begin{outline}
+	\1 An independent voltage source (or a source of emf) is a circuit element that always maintains a constant potential difference $V_0$ or emf $\mathscr E$ between its two terminals
+	\1 Can be a battery, solar cell, generator, etc.
+\end{outline}
+\subsection{Connections of circuit elements}
+\begin{outline}
+	\1 Series - one element after another, in a "serial" fashion
+	\1 Parallel - Parallel - same potential difference across each element 
+	\1 Things can be neither in series or parallel. 
+	\1 Dots are connections of two or more wires. No dot - the wires pass over each other
+	\1 Number of dots isn't necessarily the number of nodes
+	\1 Shorting - placing a path of zero resistance in parallel with a resistive path; dangerous
+
+\end{outline}
+\subsection{Independent Voltage Sources in series and parallel}
+\begin{outline}
+	\1 In series, the emf of multiple voltage sources is additive
+	\1 In parallel, the emf of the voltage sources must be the same and they must point in the same direction. The equivalent emf is the same as a single voltage source. 
+	\1 Don't connect two voltage sources in parallel of different emf or in opposite directions
+
+\end{outline}
+\subsection{Capacitors}
+\begin{outline}
+	\1 A circuit element that stores electric charge and electric potenital energy 
+	\1 capacitor is charged when the charges are equal and opposite on both plates, and uncharged when both plates have zero charge. 
+	\1 Capacitance is defined by: \[C\equiv \dfrac{|Q|}{|V|}\] Always positive, SI units F for farad, which is C/V 
+	\1 Although capacitance is defined using charge and potential, its value is independent of both of them. It depends on their geometry and the dielectric.
+	\1 Parallel plate capacitors: \[C=\varepsilon_0\dfrac{A}{d}\] (in a vacuum)
+\end{outline}
+\subsection{Series and parallel combinations of capacitors}
+\begin{outline}
+	\1 In parallel, capacitance is additive: \[C_{eq}=C_1+C_2+C_3+\cdots+C_n\]
+	\1 In series, the reciprocals of the capacitances are additive: \[\dfrac{1}{C_{eq}}=\dfrac{1}{C_1}+\dfrac{1}{C_2}+\dfrac{1}{C_3}+\cdots+\dfrac{1}{C_n}\]
+\end{outline}
+\subsection{Energy stored in a capacitor}
+\begin{outline}
+	\1 Potential energy in a capacitor: \[PE_C=\dfrac{1}{2}\dfrac{Q^2}{C}=\dfrac{1}{2}|Q||V|=\dfrac{1}{2}CV^2\]
+	\1 Energy density is potential energy per unit volume
+	\1 Any electric field is said to have a potential energy density given by: \[\dfrac{1}{2}\varepsilon_0E^2\]
+\end{outline}
+\subsection{Electrostatics in insulating material media}
+\begin{outline}
+	\1 Permitivity of a material is given by: \[\varepsilon=\kappa\varepsilon_0\] where $\kappa$ is the dielectric constant of the material. 
+\end{outline}
+\subsection{Capacitors and dielectrics}
+\begin{outline}
+	\1 The capacitance of a capacitor is actually \[C=\kappa C_0\]
+	\1 Free surface charge density - charge density $\sigma$ on the plates; free to move around
+	\1 Bound surface charge density - $\sigma_{\text{bound}}$, on the dielectric, not free to move around. \[\sigma_{\text{bound}}=\dfrac{\kappa-1}{\kappa}\sigma\]
+\end{outline}
+\subsection{Dielectric breakdown}
+\begin{outline}
+	\1 When the electric field is great enough that the bound electrons are liberated and the charges jump the dielectric gap. Lightning is an example. 
+\end{outline}
+\section{Electric Current, Resistance, and DC Circuit Analysis}
+\subsection{The concept of electric current}
+\begin{outline}
+	\1 Think of a lightbulb. Connect it to a battery with some wires. No matter how you connect it, it lights up (given correct polarity). If the wires are broken, the bulb does not light. 
+\end{outline}
+\subsection{Electric Current}
+\begin{outline}
+	\1 Charges flow through a wire or conductor or certain circuit elements
+	\1 By definition, current $I$ (A) is \[I\equiv\dfrac{dQ}{dt}\]
+	\1 Particles that carry charge are called charge carriers. Motion of a charge carrier is current. 
+	\1 Charges have an average drift speed \(\langle v\rangle\)
+	\1 So, current can also be described with: \[I=qnA\langle v\rangle\] where $q$ is the charge, $n$ is the number of charge carriers per unit volume, $A$ is the cross sectional area of the wire. 
+	\1 By convention, the direction of current is conventional current, the direction in which positive charges flow (even though electrons are the flowing charges, negative)
+
+\end{outline}
+\subsection{The Piece de Resistance: Resistance and Ohm's Law}
+\begin{outline}
+	\1 Resistance of a wire, \[R=\dfrac{\rho\ell}{A}\] where $\rho$ is the resistivity of the material, defined by \[\rho=\dfrac{1}{\sigma}\] where $\sigma$ is the conductivity of the material. $\ell$ is the length of the wire and $A$ is the cross sectional area of the wire. 
+	\1 Ohm's law: \[\Delta V=IR\] gives the potential difference across a resistor in a circuit as a function of current and resistance. 
+	\1 Polarity markings on a resistor are such that current enters it on the + side.
+	\1 Devices with nonlinear resistances as a function of current and voltage are nonohmic devices. 
+	\1 Ohmmeters measure resistance.
+\end{outline}
+\subsection{Resistance Thermometers}
+\begin{outline}
+	\1 Resistance can be a thermal quantity by the following: \[\rho=\rho_0[1+\alpha(T-T_0)]\] and \[R=R_0[1+\alpha(T-T_0)]\] where $\alpha$ is the temperature coefficient of resistivity. 
+
+\end{outline}
+\subsection{Characteristic Curves}
+\begin{outline}
+	\1 A graph of the current through a circuit element versus the potential difference across the element is called the characteristic curve of the element. 
+\end{outline}
+\subsection{Series and Parallel Connections Revisited}
+\begin{outline}
+	\1 In series, current is the same through all elements.
+	\1 In parallel, voltage is the same across all elements. 
+
+\end{outline}
+\subsection{Resistors in Series and in Parallel}
+\begin{outline}
+	\1 In series, resistance is additive: \[R_{eq}=R_1+R_2+R_3+\cdots+R_n\]
+	\1 In parallel, reciprocals are additive: \[\dfrac{1}{R_{eq}}=\dfrac{1}{R_1}+\dfrac{1}{R_2}+\dfrac{1}{R_3}+\cdots+\dfrac{1}{R_n}\]
+
+\end{outline}
+\subsection{Electric Power}
+\begin{outline}
+	\1 Pover absorbed by or transferred to an element is: \[P=IV\] The current should be directed into the positive polarity of the element for this equation. 
+	\1 Energy is still conserved through the whole circuit. 
+	\1 a kWh is an energy unit, not a power unit. 
+\end{outline}
+\subsection{Electrical Networks and Circuits}
+\begin{outline}
+	\1 A circuit is a network with at least one closed conducting path. 
+	\1 All circuits are networks but not all networks are circuits. 
+	\1 A network is any collection of circuit elements connected together. 
+\end{outline}
+\subsection{Electronics}
+\begin{outline}
+	\1 The application of physics to electric charge, its motion, and circuits
+	\1 analog electronics - specific values of currents and voltages are important to know and are the focus
+	\1 digital electronics - less important of specific numbers and more about whether something is on or off. 
+	\1 dc circuits - direct current independent of time
+	\1 ac circuits - periodically reversing currents
+	\1 transient circuits - what happens when circuits are turned on and off 
+\end{outline}
+\subsection{Kirchhoff's Laws for Circuit Analysis}
+\begin{outline}
+	\1 Kirchhoff current law - algebraic sum of the currents leaving any node of a circuit is 0
+		\2 is a statement of conservation of charge
+	\1 Kirchhoff voltage law - the algebraic sum of the potential differences around any closed loop of a circuit is 0
+		\2 is a statement of conservation of energy. 
+	\1 The parts of an elementary loop that contain either one circuit element or two or more in series with each other are known as branches. 
+	\1 Steps to solving a DC circuit: 
+		\2 See if the circuit can be simplified by combining resistors or batteries in series or parallel
+		\2 Locate and identify the significant nodes of the simplified circuit, those nodes connecting three or more circuit elements. Nodes connecting only two are not significant. 
+		\2 Choose current directions for each distinct branch of the simplified circuit. Introduce appropriate variables for each branch; we are trying to find these currents. 
+		\2 Taking into account the current dircetions, label the polarity of each resistor consistent with the directions chosen for the currents. The + terminal is the terminal the current enters through. 
+		\2 Apply the Kirchhoff voltage law to each elementary loop in the circuit. 
+		\2 Assess whether there are sufficient equations to solve for the number of unknown currents. For $n$ unknown currents, $n$ equations are needed. Determine the number of addititonal equations needed, if any. Then apply the kirchhoff current law to the significant nodes to secure the additional equations needed. 
+		\2 Solve the equations for the unknown currents. Negative currents are fine. 
+\end{outline}
+\subsection{Electric Shock Hazards}
+\begin{outline}
+	\1 Humans have a resistance 
+	\1 Voltage isn't dangerous, the current kills
+	\1 The lower the resistance, the higher the current. wet hands are more dangerous than dry hands. 
+	\1 Electric shocks can cause ventricular fibrillation
+	
+\end{outline}
+\subsection{A Model for a real battery}
+\begin{outline}
+	\1 Real batteries have internal resistance
+	\1 Terminal voltage or actual emf is given by: \[V_{\text{term}}=V_0\dfrac{R}{R+r}\] where $r$ is the internal resistance of the battery and $R$ is the equivalent resistance of the circuit. 
+
+\end{outline}
+\subsection{Maximum power transfer theorem}
+\begin{outline}
+	\1 For a real battery, the load resistance that maximizes the power absorbed by the load has a value equal to the internal resistance of the battery. 
+	\1 If the load resistance is chosen to match the internal resistance of the battery, it is called an impedance match. 
+	\1 Thevenin equivalent circuit, when the circuit is simplified as much as possible, and the internal resistance and voltage of the battery are chosen to maximize the power output. 
+\end{outline}
+\subsection{Basic electronic instruments: voltmeters, ammeters, and ohmmeters}
+\begin{outline}
+	\1 Voltmeters:
+		\2 Measure voltage difference 
+		\2 Are connected in parallel
+		\2 Have a very large resistance so they affect the circuit as little as possible
+	\1 Ammeters:
+		\2 Measure current
+		\2 Are connected in series
+		\2 Have a very small resistance to affect the circuit minimally
+	\2 Ohmmeters: 
+		\2 Measure resistance 
+		\2 Should be connected across the resistor when it is not a part of a circuit 
+
+\end{outline}
+\subsection{An introduction to transients in circuits: A series RC Circuit}
+\begin{outline}
+	\1 Capacitors are charged over a certain period of time when connected to a circuit. 
+	\1 Current: \[I(t)=\dfrac{V_0}{R}e^{-t/(RC)}\]
+	\1 Time constant of the circuit: \[\tau=RC\]
+	\1 After 5 time constants the circuit is considered to be fully charged even though the process is asymptotic
+	\1 Charge as a function of time: \[q(t)=V_0C\left[1-e^{-t/(RC)}\right]=Q_0\left[1-e^{-t/(RC)}\right]\] where $e$ is the natural log number. 
+	\1 When the capacitor is fully charged, it acts as an open switch in that branch of the circuit. When the voltage source is turned off then the capacitor can discharge, described by \[q(t)=Q_0e^{-t/(RC)}\] and \[I(t)=-\dfrac{V_0}{R}e^{-t/(RC)}\]
+\end{outline}
+\end{document}
+ 
