@@ -75,7 +75,7 @@
 \end{outline}
 \subsection{The Displacement Current and the Ampere-Maxwell Law}
 \begin{outline}
-	\1 Displacement current - current due to changing electric flux, where \[I_D\equiv\epsilon_0\dfrac{d\Phi_{\text{elec}}}{dt}\]
+	\1 Displacement current - current due to changing electric flux, where \[I_D\equiv\varepsilon_0\dfrac{d\Phi_{\text{elec}}}{dt}\]
 	\1 Ampere-Maxwell law - right side of Ampere's law should include both displacement and conduction currents: \[\int_{\text{clsd path}}\vec{B}\cdot d\vec{r}=\mu_0(I+I_D)_{\text{threading the path}}\]
 	\1 Makwell realized that magnetic fields are produced by: 
 		\2 Electric charges in motion (conduction current)
@@ -85,59 +85,99 @@
 \end{outline}
 \subsection{Magnetic Materials}
 \begin{outline}
-	\1 
+	\1 certain materials are naturally magnetic. It depends on the relative permeability of the substance: \[\kappa_m=\dfrac{\mu}{\mu_0}\]
+		\2 Diamagnetic - $\kappa_m$ slightly less than 1
+		\2 Paramagnetic - $\kappa_m$ slightly greater than 1
+		\2 Ferromagnetic - $\kappa_m$ much greater than 1
 \end{outline}
 \subsection{The Magnetic Field of the Earth}
 \begin{outline}
-	\1 
+	\1 Earth has a permanent magnetic field. 
+	\1 Magnetic north pole is actually the geographic south pole
+	\1 Magnetic declination - difference in angle between magnetic north and true north
 \end{outline}
 \section{Faraday's Law of Electromagnetic Induction}
 \subsection{Faraday's Law of Electromagnetic Induction}
 \begin{outline}
-	\1 
+	\1 A changing magnetic flux through a loop induces an electric field, called an induced electric field
+	\1 Faraday's law: \[\int_{\text{clsd path}}\vec{E}\cdot d\vec{\ell}=-\dfrac{d\Phi}{dt}\] where $\Phi$ is the magnetic flux through the enclosed area 
+	\1 Induced emf: \[\text{induced emf}\equiv\int_{\text{clsd path}}\vec{E}\cdot d\vec{\ell}\]
+	\1 Faraday's law is commonly written as \[\text{induced emf}=-\dfrac{d\Phi}{dt}\]
+	\1 The magnetic flux is: \[\Phi=\vec{B}\cdot\vec{A}\]
+	\1 Changing magnetic fields give rise to induced electric fields via Faraday's law
+	\1 Changing electric fields give rise to magnetic fields via the displacement current and the Ampere-Maxwell law.
+	\1 the electric and magnetic fields are mutually perpendicular to each other
 \end{outline}
 \subsection{Lenz's Law}
 \begin{outline}
-	\1 
+	\1 The induced current always will be directed so as to oppose the change in the magnetic flux that is taking place. 
 \end{outline}
 \subsection{An ac generator}
 \begin{outline}
-	\1 
+	\1 A coil of wire of $N$ loops (of identical area $A$) rotates in a uniform magnetic field at an angular frequency $\omega$:\[\text{induced emf}=NBA\omega\sin(\omega t)\]
+		\2 The induced emf is sinusoidal 
+	\1 When associated with a generator, we call the induced emf the source voltage
 \end{outline}
 \subsection{Summary of the Maxwell Equations of Electromagnetism}
 \begin{outline}
-	\1 
+	\1 Gauss' law for electric field: \[\int_{\text{clsd srfc } S}\vec{E}\cdot d\vec{S}=\dfrac{Q_{\text{enc}}}{\varepsilon_0}\]
+	\1 Gauss' law for magnetic field: \[\int_{\text{clsd srfc } S}\vec{B}\cdot d\vec{S}=0\text{ T}\cdot\text{m}^2\]
+	\1 Ampere-maxwell law: \[\int_{\text{clsd path}}\vec{B}\cdot d\vec{\ell}=\mu_0(I+I_D)=\mu_0I+\mu_0\varepsilon_0\dfrac{d\Phi_{\text{elec}}}{dt}\]
+	\1 Faraday's law: \[\int_{\text{clsd path}}\vec{E}\cdot d\vec{\ell}=-\dfrac{d\Phi}{dt}\]
+	\1 Light is an electromagnetic wave with its speed given by: \[c=\dfrac{1}{\sqrt{\mu_0\varepsilon_0}}\]
 \end{outline}
 \subsection{Electromagnetic Waves}
 \begin{outline}
-	\1 
+	\1 electric field component: \[\dfrac{\partial^2E_y}{\partial x^2}-\mu_0\varepsilon_0\dfrac{\partial^2E_y}{\partial t^2}=0\text{ N}/(\text{C}\cdot\text{m}^2)\]
+	\1 Magnetic field component: \[\dfrac{\partial^2B_z}{\partial x^2}-\mu_0\varepsilon_0\dfrac{\partial^2B_z}{\partial t^2}=0\text{ T}/\text{m}^2)\]
+	\1 The electric field, magnetic field, and direction of propagation are all mutually orthogonal, therefore light is a transverse wave 
+	\1 Acceleration of charges is light
 \end{outline}
 \subsection{Self-Inductance}
 \begin{outline}
-	\1 
+	\1 Self inductance is: \[L\equiv\dfrac{\Phi}{I}\] which is the total magnetic flux over the current. Measured in Henrys $H$
+
 \end{outline}
 \subsection{Series and Parallel Combinations of Inductors}
 \begin{outline}
-	\1 
+	\1 Inductors add in series: \[L_{\text{eq}}=L_1+L_2+L_3+\cdots\]
+	\1 Inverses of inductors add in parallel: \[\dfrac{1}{L_{\text{eq}}}=\dfrac{1}{L_1}+\dfrac{1}{L_2}+\dfrac{1}{L_3}+\cdots\]
 \end{outline}
 \subsection{A Series LR Circuit}
 \begin{outline}
-	\1 
+	\1 For a series LR Circuit, \[I(t)=\dfrac{V_0}{R}\left[1-e^{-(R/L)t}\right]\]
+		\2 When I is constant, there is no voltage across the inductor. An Inductor only has an effect while the current is changing with time. For the steady-state situation, there is no potential difference across an inductor since the current no longer is changing with time. \[V=L\dfrac{dI}{dt}\]
+	\1 Time constant of a LR circuit is \[\tau\equiv\dfrac{L}{R}\]
 \end{outline}
 \subsection{Energy stored in a magnetic field}
 \begin{outline}
-	\1 
+	\1 Potential energy stored by the inductor is: \[U=\dfrac{1}{2}LI^2\]
+		\2 That is, the inductor stores energy even if the current is not changing. 
+	\1 Power absorbed by the inductor: \[P=\dfrac{dU}{dt}=IL\dfrac{dI}{dt}\]
+	\1 Magnetic energy density is \[\dfrac{1}{2}\dfrac{B^2}{\mu_0}\]
 \end{outline}
 \subsection{A Parallel LC Circuit}
 \begin{outline}
-	\1 
+	\1 For a parallel LC circuit, \[\dfrac{d^2Q}{dt^2}+\dfrac{1}{LC}Q=0\text{ A}/\text{s}\]
+		\2 Which is the equation for SHM
+	\1 the charge oscillates between the inductor and the capacitor: \[Q(t)=Q_0\cos(\omega t+\phi)\]
+	\1 The angular frequency of the charge oscillations is: \[\omega=\dfrac{1}{\sqrt{LC}}\]
 \end{outline}
 \subsection{Mutual Inductance}
 \begin{outline}
-	\1 
+	\1 an inductor near another inductor can induce a current there. 
+	\1 mutual inductance \[M_{21}\equiv\dfrac{\Phi_{21}}{I_1}\] \[V_2\equiv M_{21}\dfrac{dI_1}{dt}\] for a closed circuit near an open one \[V_1\equiv M_{21}\dfrac{dI_2}{dt}\] for a reciprocal arrangement \[M_{21}=M_{12}\]
+	\1 If both circuits are closed, \[V_1=L_1\dfrac{dI_1}{dt}+M\dfrac{dI_2}{dt}\] \[V_2=L_2\dfrac{dI_2}{dt}+M\dfrac{dI_1}{dt}\]
 \end{outline}
 \subsection{An Ideal Transformer}
 \begin{outline}
-	\1 
+	\1 Transformers can change voltage of AC signals using mutual inductance. 
+\0 \[V_1=N_1\dfrac{d\Phi}{dt}\] \[V_2=N_2\dfrac{d\Phi}{dt}\] but since $\dfrac{d\Phi}{dt}$ is the same for all wires in the system, we can write this as \[\dfrac{V_1}{V_2}=\dfrac{N_1}{N_2}\]
+	\1 Input coil is the primary coil, the output coil is the secondary
+	\1 Step up transformers - \(V_2>V_1\) and \(N_2>N_1\)
+	\1 Step down transformers - \(V_2<V_1\) and \(N_2<N_1\)
+	\1 In a step up transformer, the output potential is greater than the input but the current is less 
+	\1 In a step down transformer, the output voltage is less than the input, and the current is greater 
+	\1 Transformers don't work with dc current. 
 \end{outline}
 \end{document}
