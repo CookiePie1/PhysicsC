@@ -1,0 +1,69 @@
+\documentclass[twocolumn]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{outlines}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\title{Ch. 22 Notes}
+\author{John Yang}
+\setcounter{section}{+20}
+
+\begin{document}
+\maketitle
+\section{Sinusoidal AC Circuit Analysis}
+\subsection{Representations of a complex variable}
+\begin{outline}
+\1 Rectangular, Polar, Exponential \[z=x+iy=r\angle\theta=re^{i\theta}\] where \[x=r\cos\theta\]\[y=r\sin\theta\]\[\tan\theta=\dfrac{\text{Im}}{\text{Re}}=\dfrac{y}{x}\]\[z=r\angle\theta=r\cos\theta+ir\sin\theta=re^{i\theta}\]
+
+\end{outline}
+\subsection{Arithmetic Operations with Complex Variables}
+\begin{outline}
+\1 Adding and subtracting: Add real and add imaginary separately
+\1 Multiplication: \[z_1z_2=r_1r_2e^{i(\theta_1+\theta_2)}\]\[z_1z_2=(r_1\angle\theta_1)(r_2\angle\theta_2)=r_1r_2\angle(\theta_1+\theta_2)\]\[z_1z_2=(x_1+iy_1)(x_2+iy_2)\]\[=(x_1x_2-y_1y_2)+i(x_1y_2+x_2y_1)\]
+\1 Division: \[\dfrac{z_1}{z_2}=\dfrac{r_1e^{i\theta_1}}{r_2e^{i\theta_2}}=\dfrac{r_1}{r_2}\angle(\theta_1-\theta_2)\]\[\dfrac{z_1}{z_2}=\dfrac{r_1\angle\theta_1}{r_2\angle\theta_2}=\dfrac{r_1}{r_2}\angle(\theta_1-\theta_2)\]
+\1 Complex conjugates: \[z=x+iy\]\[z^*=x-iy\]
+\end{outline}
+\subsection{Complex potential differences and currents: Phasors} 
+\begin{outline}
+\1 Sinusoidally oscillating potential differences and currents: \[V(t)=V_0\cos(\omega t+\theta)\]\[I(t)=I_0\cos(\omega t+\phi)\]
+\end{outline}
+\subsection{The Potential difference and current Phasors for resistors, Inductors, and Capacitors}
+\begin{outline}
+\1 Resistor: \[V=IR\]\[V(t)=RI(t)\]
+\1 Inductor: \[V=L\dfrac{dI}{dt}\]
+\1 Capacitor: \[C=\dfrac{Q}{V}\]\[I=C\dfrac{dV}{dt}\]
+\1 Impedances: \[V=IZ\]
+    \2 Resistor: \[Z_R=R\]
+    \2 Inductor: \[Z_L=i\omega L\]
+    \2 Capacitor: \[Z_C=\dfrac{1}{i\omega C}\]
+\1 Impedance is measured in Ohms. Impedances for capacitors and inductors are imaginary numbers. Impedance is not a phasor. 
+\end{outline}
+\subsection{Series and parallel combinations of impedances}
+\begin{outline}
+\1 Impedances in series combine like resistors in series
+\1 Impedances in parallel combine like resistors in parallel
+\end{outline}
+\subsection{Complex independent AC voltage sources}
+\begin{outline}
+\1 Complex voltage sources: \[V_{\text{source}}(t)=V_0\cos(\omega t)+iV_0\sin(\omega t)\]\[V_{\text{source}}(t)=V_0e^{i(\omega t)}\]\[V_{\text{source}}(t)=V_0\angle(\omega t)\]
+\end{outline}
+\subsection{Power absorbed by circuit elements in AC Circuits}
+\begin{outline}
+\1 Average power absorbed by a circuit element: \[\langle P\rangle=\dfrac{1}{2}V_0I_0\cos\beta\]where\[\beta=\theta-\phi\]
+\1 $\cos\beta$ is the power factor. 
+\1 Peak values divided by $\sqrt 2$ are known as effective values of potential difference and current, also known as rms values. \[V_{\text{rms}}=\dfrac{V_0}{\sqrt 2}\]\[I_{\text{rms}}=\dfrac{I_0}{\sqrt 2}\]\[\langle P\rangle=V_{\text{rms}}I_{\text{rms}}\cos\beta\]
+\1 Multimeters read rms values and not peak values
+\1 For resistors, $\cos\beta=1$
+\1 For capacitors, the average power is 0 because \(\beta=-\dfrac{\pi}{2}\)
+\1 For inductors, the average power is 0 because \(\beta=\dfrac{\pi}{2}\)
+\end{outline}
+\subsection{A Filter circuit}
+\begin{outline}
+\1 Filter circuits let certain frequencies pass relatively unimpeded and filter out or eliminate one or another range of frequencies. 
+\end{outline}
+\subsection{A Series RLC Circuit}
+\begin{outline}
+\1 For fixed $L$ and $C$, the numerical value of the resistance affects the shape of the graph of $\langle P\rangle$ vs. $\omega$. The smaller the resistance $R$, the more sharply peaked the curve. 
+\end{outline}
+
+
+\end{document}
